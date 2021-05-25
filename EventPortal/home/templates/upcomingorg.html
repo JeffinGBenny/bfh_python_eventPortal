@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  function Function()
+  {
+    alert("successfuklly registered for the event");
+  }
+</script>
+</script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Upcoming Events Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/line-icons.css' %}">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox.css' %}" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+  </head>
+  <body>
+
+ <a href='bfhpage2.html' class="navbar-brand"><img src="{% static 'img/logo1.png' %}" alt=""></a>  
+ <div class ="page2">  
+ <h2 class="head-title">Event Details</h2>
+ <div class="contain">
+ <ol method="get">
+    
+    <p>{{EventDetails.eventtitle}}</p>
+    <p>{{EventDetails.Date}}</p>
+    <p>{{EventDetails.Time}}</p>
+    <p>{{EventDetails.max_no_of_participants}}</p>
+    <p>{{EventDetails.Description}}</p>
+    <p>eventtitle:python bootcamp</p>
+    <p>Date:2021-05-30</p>
+    <p>Time:6pm</p>
+    <p>max participants:50</p>
+    <p>Description:Webinar session on how to do some major projects in python and some guidelines regarding the same</p>
+    
+    <img src="{% static 'img/image3.png' %}">
+    
+</ol>
+</div>
+<button type="submit"class="rsvp" method="post" onclick="Function()">Register RSVP</button>
+</div>
+<div>
+  {% for message in messages %}
+   <h3> {{message}}</h3>
+   {% endfor %}
+</div>
+  </body>
+</html>
