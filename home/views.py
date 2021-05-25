@@ -22,9 +22,7 @@ def login(request):
 
 def UserProfile(request):
      return render(request,"UserProfile.html")
-
-
-        user=auth.authenticate(username=username,password=password)
+     user=auth.authenticate(username=username,password=password)
         
         if user is not None:
             auth.login(request,user)
@@ -32,7 +30,7 @@ def UserProfile(request):
         else:
             messages.info(request,'invalid credentials')
 
-    return render(request,"login.html")
+     return render(request,"login.html")
 
 
 def  createEvent(request):
