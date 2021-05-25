@@ -17,7 +17,10 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
+<<<<<<< HEAD
   background-image:url("background.jpg");
+=======
+>>>>>>> 3cd566f... success
 }
 
 h1, h2, h3, h4, h5 {
@@ -2445,6 +2448,9 @@ footer {
   padding: 12px 40px;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 .contain{
   text-align:center;
 }
+=======
+>>>>>>> 3cd566f... success

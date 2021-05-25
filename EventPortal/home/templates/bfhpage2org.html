@@ -3,7 +3,11 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+<<<<<<< HEAD
     <meta charset="utf-16">
+=======
+    <meta charset="utf-8">
+>>>>>>> 3cd566f... success
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>College Of Engineering Chengannur</title>
@@ -26,7 +30,11 @@
   <body>
 
     
+<<<<<<< HEAD
           <a href="bfhpage2org.html" class="navbar-brand"><img src="{% static 'img/logo1.png' %}" alt="" width="5" height="5"></a>       
+=======
+          <a href="{% url 'bfhpage2.html' %}" class="navbar-brand"><img src="{% static 'img/logo1.png' %}" alt=""></a>       
+>>>>>>> 3cd566f... success
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button> <header id="header-wrap">
@@ -44,6 +52,7 @@
                 <a class="nav-link" href="#about">
                   Registered Events
                 </a>
+<<<<<<< HEAD
                 </li>
                 <li class="nav-item">
                   <a class="nav-link">
@@ -58,6 +67,15 @@
                   <li class="nav-item">
                   <a class="nav-link">
                     <button type="button" onclick="window.location.href='logout'">Logout</button>
+=======
+                <li class="nav-item">
+                  <a class="nav-link">
+                    <a href= "{% url 'Eventgenerator.html' %}">create event</a>
+                  </a>
+                   <li class="nav-item">
+                  <a class="nav-link">
+                    User Profile
+>>>>>>> 3cd566f... success
                   </a>
               </li>
             </ul>
@@ -79,6 +97,7 @@
                 <h2 class="head-title">Upcoming Events</h2>
                 <div id="images">
                   <div class="row">
+<<<<<<< HEAD
                     {% for events in details %}
                     <div class="col">
                       <a href= 'showEvent' >
@@ -87,6 +106,19 @@
                     </div>
                     {% endfor %}
                     
+=======
+                    <div class="col">
+                      <a href="{% url 'upcoming.html' %}">
+                    <img src="{% static 'img/download.jpg' %}">
+                    </a>
+                    </div>
+                    <div class="col">
+                      <img src="{% static 'img/image1.jpg' %}">
+                    </div>
+                    <div class="col">
+                      <img src="{% static 'img/image2.jpg' %}">
+                    </div>
+>>>>>>> 3cd566f... success
                 </div>
               </div>
             </div>
@@ -106,10 +138,22 @@
                    <div class="container">
                   <div class ="row">
                     <div class="col">
+<<<<<<< HEAD
                        <img  src="{% static 'img/image3.png' %}">
                       </div>
                     
                    
+=======
+                       <img  src="{% static 'img/download.jpg' %}">
+                      </div>
+                    
+                    <div class ="col">
+                      <img src="{% static 'img/image1.jpg' %}">
+                    </div>
+                     <div class ="col">
+                      <img src="{% static 'img/image2.jpg' %}">
+                    </div>
+>>>>>>> 3cd566f... success
                         
                     </div>
                   </div>
