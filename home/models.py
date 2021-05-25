@@ -4,7 +4,7 @@ from django.db import models
 
 
 
-class User_Details(models.Model):
+
     
 
 class User_Details(models.Model):
