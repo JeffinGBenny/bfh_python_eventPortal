@@ -1,5 +1,5 @@
 from django.urls import path
-<<<<<<< HEAD
+
 from django.conf.urls import url
 from . import views
 from django.conf import settings
@@ -17,7 +17,7 @@ urlpatterns=[
     path('',views.logout , name='logout'),
 ]
 urlpatterns=urlpatterns+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-=======
+
 from . import views
 urlpatterns=[
     path('',views.login,name='home'),
@@ -27,4 +27,4 @@ urlpatterns=[
  #   path('upcomingorg/',views.upcomingorg , name='upcomingorg'),
  #   path('Eventgenerator/',views.Eventgenerator , name='Eventgenerator'),
 ]
->>>>>>> 3cd566f... success
+
