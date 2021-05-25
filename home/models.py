@@ -1,20 +1,20 @@
 from django.db import models
 from django.db import models
 
-<<<<<<< HEAD
+
 
 
 class User_Details(models.Model):
     
-=======
+
 class User_Details(models.Model):
->>>>>>> 3cd566f... success
+
      username=models.CharField(max_length=30)
      password=models.CharField(max_length=20)
      mobile=models.IntegerField()
      semester=models.CharField(max_length=10)
      email=models.CharField(max_length=10)
-<<<<<<< HEAD
+
      registeredevent=models.ImageField(upload_to='pics')
      class Meta:
         verbose_name_plural="User_Details"
@@ -38,7 +38,7 @@ class EventDetails(models.Model):
 
 
 
-=======
+
 
 class EventDetails(models.Model):
     eventtitle=models.CharField(max_length=20)
@@ -47,7 +47,7 @@ class EventDetails(models.Model):
     max_no_participants=models.IntegerField()
     Description=models.CharField(max_length=20)
     eventbanner=models.ImageField(upload_to='pics')
->>>>>>> 3cd566f... success
+
 
 
 
